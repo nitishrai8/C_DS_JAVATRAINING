@@ -9,19 +9,23 @@ public class BmiCalculator {
 
        double BMI=(weight)/(height*height);
         System.out.println("BMI is:" +BMI);
-        if(BMI<18.5) {
-            System.out.println("Normal weight:" + BMI);
-        }
-            else if (BMI > 18.5 && BMI < 24.8 ){
-            System.out.println("Normal weight:");
+        if(BMI<18.5)
+            System.out.println("under weight:" + BMI);
+            else if (BMI >= 18.5 && BMI < 24.9 )
+            System.out.println("healthy weight:");
+            else if (BMI>=24.9 && BMI<30)
+                System.out.println("Over weight");
+            else if (BMI>=30)
+                System.out.println("obesity");
+
+            }
+
+
+
 
         }
-        else {
-            System.out.println("Over weight:");
-
-        }
 
 
 
-    }
-}
+
+
